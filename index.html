@@ -43,7 +43,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
     </header>
     <script type="module">
       import {WebXRButton} from './js/util/webxr-button.js';
-      import {Scene} from './js/render/fire/fire.js';
+      import {Scene} from './js/render/scenes/scene.js';
       import {Renderer, createWebGLContext} from './js/render/core/renderer.js';
       import {Node} from './js/render/core/node.js';
       import {Gltf2Node} from './js/render/nodes/gltf2.js';
@@ -67,7 +67,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
       arObject.visible = false;
       scene.addNode(arObject);
 
-      let flower = new Gltf2Node({url: 'media/gltf/sunflower/sunflower.gltf'});
+      let flower = new Gltf2Node({url: 'media/gltf/fire/fire.gltf'});
       arObject.addNode(flower);
 
       let reticle = new Gltf2Node({url: 'media/gltf/reticle/reticle.gltf'});
